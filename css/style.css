@@ -47,6 +47,42 @@ body {
   margin-bottom: 2rem;
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .btn:link, .btn:visited {
   border-radius: 25rem;
   text-decoration: none;
@@ -85,10 +121,25 @@ body {
 }
 
 .pitch {
+  margin: 15rem auto;
+}
+.pitch__bg--top {
+  width: 100%;
+  margin: 0;
+  transform: translateY(0.3rem);
+}
+.pitch__bg--bottom {
+  width: 100%;
+  margin: 0;
+  transform: translateY(-0.3rem);
+}
+.pitch__content {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 10%;
-  margin: 10rem auto;
+  padding: 5% 10%;
+}
+.pitch__content:nth-child(even) {
+  background-color: hsl(207, 100%, 98%);
 }
 .pitch__img {
   width: 70%;
@@ -113,22 +164,38 @@ body {
 }
 .header__logo {
   width: 20rem;
+  animation: moveInLeft 0.3s ease-out;
+}
+.header__link {
+  animation: moveInRight 0.3s ease-out;
+}
+.header__heading-main {
+  animation: moveInBottom 0.3s ease-in-out;
 }
 .header__text {
   font-size: 1.4rem;
   text-align: center;
   line-height: 1.5;
+  animation: moveInBottom 0.3s ease-in-out;
 }
 .header__img {
   width: 80%;
   margin: 0 auto;
   display: block;
+  animation: moveInBottom 0.3s ease-in-out;
+}
+.header__btn {
+  animation: moveInBottom 0.3s ease-in-out;
 }
 
 .footer {
-  background-color: hsl(192, 100%, 9%);
   color: hsl(207, 100%, 98%);
-  padding: 2rem;
+  position: relative;
+}
+.footer__content {
+  padding: 10rem 2rem 2rem;
+  margin: 0 auto;
+  background-color: hsl(192, 100%, 9%);
 }
 .footer__heading {
   text-transform: uppercase;
@@ -139,6 +206,12 @@ body {
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 600;
+}
+.footer__bg-top {
+  width: 100%;
+  margin: 0;
+  transform: translateY(1rem);
+  padding: -2rem;
 }
 .footer__form__input {
   display: block;
@@ -239,11 +312,6 @@ body {
 }
 .stat__group {
   margin-bottom: 8rem;
-}
-
-.grow-together,
-.your-users {
-  background-color: hsl(207, 100%, 98%);
 }
 
 .cta {

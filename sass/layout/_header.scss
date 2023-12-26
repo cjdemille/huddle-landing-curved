@@ -9,17 +9,33 @@
 
     &__logo {
         width: 20rem;
+        animation: moveInLeft 0.3s ease-out;
+    }
+
+    &__link {
+        animation: moveInRight 0.3s ease-out;
+    }
+
+    &__heading-main {
+        animation: moveInBottom 0.3s ease-in-out;
     }
 
     &__text {
         font-size: 1.4rem;
         text-align: center;
         line-height: 1.5;
+        animation: moveInBottom 0.3s ease-in-out;
     }
 
     &__img {
         width: 80%;
         margin: 0 auto;
         display: block;
+        animation: moveInBottom 0.3s ease-in-out;
     }
+
+    &__btn {
+        animation: moveInBottom 0.3s ease-in-out;
+    }
+
 }

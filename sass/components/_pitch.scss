@@ -1,8 +1,28 @@
 .pitch {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 10%;
-    margin: 10rem auto;
+    margin: 15rem auto;
+
+    &__bg--top {
+        width: 100%;
+        margin: 0;
+        transform: translateY(.3rem);
+    }
+
+    &__bg--bottom {
+        width: 100%;
+        margin: 0;
+        transform: translateY(-.3rem);
+    }
+
+    &__content {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5% 10%;
+        // margin: 10rem auto;
+
+        &:nth-child(even) {
+            background-color: $color-blue-pale;
+        }
+    }
 
     &__img {
         width: 70%;
@@ -17,4 +37,8 @@
         width: 80%;
         margin: 0 auto;
     }
+
+
+
+
 }

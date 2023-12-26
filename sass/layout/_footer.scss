@@ -1,7 +1,12 @@
 .footer {
-    background-color: $color-cyan;
     color: $color-blue-pale;
-    padding: 2rem;
+    position: relative;
+
+    &__content {
+        padding: 10rem 2rem 2rem;
+        margin: 0 auto;
+        background-color: $color-cyan
+    }
 
     &__heading {
         text-transform: uppercase;
@@ -13,6 +18,13 @@
         font-size: 1.4rem;
         line-height: 2.4rem;
         font-weight: 600;
+    }
+
+    &__bg-top {
+        width: 100%;
+        margin: 0;
+        transform: translateY(1rem);
+        padding: -2rem;
     }
 
     &__form {
@@ -97,7 +109,10 @@
                 cursor: pointer;
             }
         }
+
     }
+
+
 
 }
 
