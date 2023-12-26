@@ -1,0 +1,52 @@
+.btn {
+
+    &:link,
+    &:visited {
+        border-radius: 25rem;
+        text-decoration: none;
+        padding: 1rem 3rem;
+    }
+
+
+    &--nav {
+
+        border: 1px solid $color-pink-light;
+        color: $color-pink-light;
+        font-size: .9rem;
+        transition: all .2s;
+
+        &:hover,
+        &:active {
+            box-shadow: 0 1rem 2rem rgba($color-pink , .2);
+        }
+
+        &:active {
+            box-shadow: 0 1rem 1.2rem rgba($color-pink , .3);
+            transform: translateY(3px);
+        }
+    }
+
+    &--cta:link,
+    &--cta:visited {
+        background-color: $color-pink;
+        color: white;
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+        width: 17rem;
+        box-shadow: 0 1rem 2rem rgba($color-cyan , .2);
+    }
+
+
+    &--cta:active,
+    &--cta:hover {
+        background-color: $color-pink-light;
+        transition: all .2s;
+    }
+
+    &--cta:active {
+        background-color: $color-pink-light;
+        box-shadow: 0 1rem 1rem rgba($color-cyan , .4);
+        transform: translateY(2px);
+    }
+}

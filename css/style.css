@@ -1,0 +1,262 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.heading--secondary,
+.heading--main,
+.footer__heading {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading--main {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.heading--secondary {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 12rem;
+}
+
+.u-margin-bottom-huge-center {
+  margin: 0 auto 10rem auto;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.btn:link, .btn:visited {
+  border-radius: 25rem;
+  text-decoration: none;
+  padding: 1rem 3rem;
+}
+.btn--nav {
+  border: 1px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.btn--nav:hover, .btn--nav:active {
+  box-shadow: 0 1rem 2rem rgba(255, 82, 191, 0.2);
+}
+.btn--nav:active {
+  box-shadow: 0 1rem 1.2rem rgba(255, 82, 191, 0.3);
+  transform: translateY(3px);
+}
+.btn--cta:link, .btn--cta:visited {
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+  width: 17rem;
+  box-shadow: 0 1rem 2rem rgba(0, 37, 46, 0.2);
+}
+.btn--cta:active, .btn--cta:hover {
+  background-color: hsl(321, 100%, 78%);
+  transition: all 0.2s;
+}
+.btn--cta:active {
+  background-color: hsl(321, 100%, 78%);
+  box-shadow: 0 1rem 1rem rgba(0, 37, 46, 0.4);
+  transform: translateY(2px);
+}
+
+.pitch {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10%;
+  margin: 10rem auto;
+}
+.pitch__img {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+.pitch__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 3rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 20rem;
+}
+.header__text {
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.header__img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+  padding: 2rem;
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.footer__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+.footer__form__input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+.footer__form__submit {
+  border: none;
+  padding: 1rem 3rem;
+  margin: 1rem 0;
+  float: right;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.footer__form__submit:hover {
+  cursor: pointer;
+  background-color: hsl(321, 100%, 78%);
+}
+.footer__form__error {
+  color: hsl(0, 100%, 63%);
+}
+.footer__contact {
+  clear: both;
+  margin-top: 12rem;
+}
+.footer__contact__logo {
+  width: 20rem;
+  margin: 3rem 0;
+}
+.footer__contact__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+}
+.footer__contact__method {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.footer__contact__img {
+  margin-right: 1rem;
+  display: inline-block;
+}
+.footer__contact__socials {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.footer__contact__social {
+  transition: all 0.2s;
+}
+.footer__contact__social:hover {
+  color: hsl(322, 100%, 66%);
+}
+.footer__contact__social:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer__contact__social :not(:last-child) {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 3rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(322, 100%, 66%);
+}
+
+.hidden {
+  color: transparent;
+}
+
+.stat {
+  width: 30%;
+  margin: 0 auto;
+}
+.stat__heading {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.5;
+  display: block;
+  text-align: center;
+}
+.stat__text {
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+}
+.stat__group {
+  margin-bottom: 8rem;
+}
+
+.grow-together,
+.your-users {
+  background-color: hsl(207, 100%, 98%);
+}
+
+.cta {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta__heading {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  width: 50%;
+  display: block;
+  margin: 4rem auto;
+}
+
+/*# sourceMappingURL=style.css.map */

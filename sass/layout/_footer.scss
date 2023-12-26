@@ -1,0 +1,117 @@
+.footer {
+    background-color: $color-cyan;
+    color: $color-blue-pale;
+    padding: 2rem;
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+    }
+
+    &__form {
+        &__input {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+            border-radius: .5rem;
+            margin: 2rem 0;
+        }
+
+        &__submit {
+            border: none;
+            padding: 1rem 3rem;
+            margin: 1rem 0;
+            float: right;
+            color: white;
+            background-color: $color-pink;
+            border-radius: .5rem;
+            transition: all .2s;
+
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-pink-light;
+            }
+        }
+
+        &__error {
+            color: $color-red-light;
+        }
+    }
+
+    &__contact {
+        clear: both;
+        margin-top: 12rem;
+
+        &__logo {
+            width: 20rem;
+            margin: 3rem 0;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+        }
+
+        &__method {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        &__img {
+            margin-right: 1rem;
+            display: inline-block;
+        }
+
+        &__socials {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+
+        }
+
+        &__social {
+            transition: all .2s;
+
+            &:hover {
+                color: $color-pink;
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            :not(:last-child) {
+                margin-right: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.attribution {
+    margin-top: 3rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: $color-pink;
+}
+
+
+.hidden {
+    color: transparent;
+}

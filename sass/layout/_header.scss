@@ -1,0 +1,25 @@
+.header {
+    padding: 3rem;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 20rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    &__img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}
