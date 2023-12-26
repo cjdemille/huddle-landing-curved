@@ -25,6 +25,12 @@
         text-align: center;
         line-height: 1.5;
         animation: moveInBottom 0.3s ease-in-out;
+
+        @include respond(desktop) {
+            font-size: 2rem;
+            width: 50%;
+            margin: 0 auto 4rem;
+        }
     }
 
     &__img {

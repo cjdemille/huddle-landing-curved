@@ -2,6 +2,13 @@
     width: 30%;
     margin: 0 auto;
 
+    @include respond(desktop) {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__heading {
         font-weight: 700;
         font-size: 6rem;
@@ -18,6 +25,11 @@
 
     &__group {
         margin-bottom: 8rem;
+
+        @include respond(desktop) {
+            margin: 4rem;
+            text-align: center;
+        }
     }
 
 

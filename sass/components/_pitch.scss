@@ -5,6 +5,7 @@
         width: 100%;
         margin: 0;
         transform: translateY(.3rem);
+
     }
 
     &__bg--bottom {
@@ -19,8 +20,17 @@
         padding: 5% 10%;
         // margin: 10rem auto;
 
-        &:nth-child(even) {
+        &--blue {
             background-color: $color-blue-pale;
+        }
+
+        @include respond(desktop) {
+            display: flex;
+            align-items: center;
+
+            &__column {
+                width: 50%;
+            }
         }
     }
 
@@ -36,9 +46,11 @@
         text-align: center;
         width: 80%;
         margin: 0 auto;
+
+        @include respond(desktop) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            
+        }
     }
-
-
-
-
 }

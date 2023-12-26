@@ -10,6 +10,21 @@ html {
   font-size: 62.5%;
 }
 
+.desktop {
+  display: none;
+}
+@media only screen and (min-width: 50em) {
+  .desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .mobile {
+    display: none;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -25,10 +40,21 @@ body {
   text-align: center;
   padding: 0 4rem;
 }
+@media only screen and (min-width: 50em) {
+  .heading--main {
+    font-size: 4.8rem;
+  }
+}
 
 .heading--secondary {
   font-size: 2rem;
   text-align: center;
+}
+@media only screen and (min-width: 50em) {
+  .heading--secondary {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
 }
 
 .u-margin-bottom-huge {
@@ -138,8 +164,17 @@ body {
   width: 100%;
   padding: 5% 10%;
 }
-.pitch__content:nth-child(even) {
+.pitch__content--blue {
   background-color: hsl(207, 100%, 98%);
+}
+@media only screen and (min-width: 50em) {
+  .pitch__content {
+    display: flex;
+    align-items: center;
+  }
+  .pitch__content__column {
+    width: 50%;
+  }
 }
 .pitch__img {
   width: 70%;
@@ -153,44 +188,17 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-
-.header {
-  padding: 3rem;
-}
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__logo {
-  width: 20rem;
-  animation: moveInLeft 0.3s ease-out;
-}
-.header__link {
-  animation: moveInRight 0.3s ease-out;
-}
-.header__heading-main {
-  animation: moveInBottom 0.3s ease-in-out;
-}
-.header__text {
-  font-size: 1.4rem;
-  text-align: center;
-  line-height: 1.5;
-  animation: moveInBottom 0.3s ease-in-out;
-}
-.header__img {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
-  animation: moveInBottom 0.3s ease-in-out;
-}
-.header__btn {
-  animation: moveInBottom 0.3s ease-in-out;
+@media only screen and (min-width: 50em) {
+  .pitch__text {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 .footer {
   color: hsl(207, 100%, 98%);
   position: relative;
+  display: grid;
 }
 .footer__content {
   padding: 10rem 2rem 2rem;
@@ -298,6 +306,14 @@ body {
   width: 30%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 50em) {
+  .stat {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .stat__heading {
   font-weight: 700;
   font-size: 6rem;
@@ -312,6 +328,12 @@ body {
 }
 .stat__group {
   margin-bottom: 8rem;
+}
+@media only screen and (min-width: 50em) {
+  .stat__group {
+    margin: 4rem;
+    text-align: center;
+  }
 }
 
 .cta {

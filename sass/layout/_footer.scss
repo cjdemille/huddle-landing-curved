@@ -1,6 +1,7 @@
 .footer {
     color: $color-blue-pale;
     position: relative;
+    display: grid;
 
     &__content {
         padding: 10rem 2rem 2rem;
