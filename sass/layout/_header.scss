@@ -35,6 +35,7 @@
 
     &__img {
         width: 80%;
+        max-width: 90rem;
         margin: 0 auto;
         display: block;
         animation: moveInBottom 0.3s ease-in-out;

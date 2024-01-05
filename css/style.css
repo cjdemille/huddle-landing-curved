@@ -195,6 +195,79 @@ body {
   }
 }
 
+.grow-together {
+  position: relative;
+}
+.grow-together::before {
+  content: "";
+  background-image: url(../images/bg-section-top-mobile-1.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  bottom: 100%;
+}
+@media only screen and (min-width: 50em) {
+  .grow-together::before {
+    background-image: url(../images/bg-section-top-desktop-1.svg);
+  }
+}
+.grow-together::after {
+  content: "";
+  background-image: url(../images/bg-section-bottom-mobile-1.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+}
+@media only screen and (min-width: 50em) {
+  .grow-together::after {
+    background-image: url(../images/bg-section-bottom-desktop-1.svg);
+  }
+}
+
+.your-users {
+  position: relative;
+}
+.your-users::before {
+  content: "";
+  background-image: url(../images/bg-section-top-mobile-2.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  bottom: 100%;
+}
+@media only screen and (min-width: 50em) {
+  .your-users::before {
+    background-image: url(../images/bg-section-top-desktop-2.svg);
+  }
+}
+.your-users::after {
+  content: "";
+  background-image: url(../images/bg-section-bottom-mobile-2.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 50em) {
+  .your-users::after {
+    background-image: url(../images/bg-section-bottom-desktop-2.svg);
+  }
+}
+
 .header {
   padding: 3rem;
 }
@@ -228,6 +301,7 @@ body {
 }
 .header__img {
   width: 80%;
+  max-width: 90rem;
   margin: 0 auto;
   display: block;
   animation: moveInBottom 0.3s ease-in-out;
@@ -238,8 +312,10 @@ body {
 
 .footer {
   color: hsl(207, 100%, 98%);
+  background-color: hsl(192, 100%, 9%);
   position: relative;
   width: 100%;
+  margin-top: 30rem;
 }
 .footer__content {
   padding: 10rem 2rem 2rem;
@@ -252,6 +328,7 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     padding: 5rem;
+    max-width: 150rem;
   }
 }
 .footer__heading {
@@ -316,6 +393,7 @@ body {
   .footer__contact {
     clear: none;
     margin-top: 0;
+    width: 48%;
   }
 }
 .footer__contact__logo {
@@ -355,10 +433,26 @@ body {
   margin-right: 2rem;
   cursor: pointer;
 }
+.footer::before {
+  content: "";
+  background-image: url(../images/bg-footer-top-mobile.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  bottom: 100%;
+}
+@media only screen and (min-width: 50em) {
+  .footer::before {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+  }
+}
 
 .attribution {
-  margin-top: 3rem;
-  font-size: 11px;
+  margin: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -380,10 +474,12 @@ body {
 }
 @media only screen and (min-width: 50em) {
   .stat {
-    width: 80%;
+    width: 60%;
+    max-width: 90rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 8rem auto;
   }
 }
 .stat__heading {
@@ -403,14 +499,13 @@ body {
 }
 @media only screen and (min-width: 50em) {
   .stat__group {
-    margin: 4rem;
     text-align: center;
   }
 }
 
 .cta {
   width: 100%;
-  margin: 0 auto;
+  margin: 40rem auto;
   text-align: center;
 }
 .cta__heading {
@@ -418,7 +513,7 @@ body {
   line-height: 1.5;
   width: 50%;
   display: block;
-  margin: 4rem auto;
+  margin: 25rem auto 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

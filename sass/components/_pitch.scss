@@ -50,7 +50,89 @@
         @include respond(desktop) {
             font-size: 1.6rem;
             line-height: 2.4rem;
-            
+
         }
     }
+}
+
+
+.grow-together {
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../images/bg-section-top-mobile-1.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        bottom: 100%;
+
+        @include respond(desktop) {
+            background-image: url(../images/bg-section-top-desktop-1.svg);
+        }
+    }
+
+    &::after {
+        content: '';
+        background-image: url(../images/bg-section-bottom-mobile-1.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+
+        @include respond(desktop) {
+            background-image: url(../images/bg-section-bottom-desktop-1.svg);
+        }
+    }
+
+
+
+}
+
+
+
+.your-users {
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../images/bg-section-top-mobile-2.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        bottom: 100%;
+
+        @include respond(desktop) {
+            background-image: url(../images/bg-section-top-desktop-2.svg);
+        }
+    }
+
+    &::after {
+        content: '';
+        background-image: url(../images/bg-section-bottom-mobile-2.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        top: 100%;
+        margin-bottom: 4rem;
+
+        @include respond(desktop) {
+            background-image: url(../images/bg-section-bottom-desktop-2.svg);
+        }
+    }
+
+
+
 }

@@ -3,10 +3,12 @@
     margin: 0 auto;
 
     @include respond(desktop) {
-        width: 80%;
+        width: 60%;
+        max-width: 90rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 8rem auto;
     }
 
     &__heading {
@@ -27,7 +29,7 @@
         margin-bottom: 8rem;
 
         @include respond(desktop) {
-            margin: 4rem;
+            // margin: 4rem;
             text-align: center;
         }
     }
@@ -43,7 +45,7 @@
 
 .cta {
     width: 100%;
-    margin: 0 auto;
+    margin: 40rem auto;
     text-align: center;
 
     &__heading {
@@ -51,6 +53,6 @@
         line-height: 1.5;
         width: 50%;
         display: block;
-        margin: 4rem auto;
+        margin: 25rem auto 2rem;
     }
 }
